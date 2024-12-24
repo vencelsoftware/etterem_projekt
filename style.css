@@ -23,6 +23,12 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
 .navbar {
     background-color: #FFE6A7;
     display: flex;
