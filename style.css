@@ -21,6 +21,7 @@
 }
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 .navbar {
     background-color: #FFE6A7;
