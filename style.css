@@ -21,9 +21,8 @@
 }
 body {
     margin: 0;
-    padding: 0;
 }
-body, html {
+html, body {
     overflow-x: hidden;
 }
 .navbar {
@@ -103,11 +102,13 @@ body, html {
     font-family: Expanded-Bold;
     font-size: 40px;
     letter-spacing: 3px;
+    padding: 0px 20px;
 }
 .heading_text p {
     font-family: ExtraLight;
     font-size: 20px;
     word-spacing: 5px;
+    padding: 0px 20px;
 }
 .heading_img {
     width: 600px;
@@ -117,7 +118,7 @@ body, html {
     position: relative;
 }
 .heading_img img {
-    width: 500px;
+    width: 90%;
     border-radius: 50px;
     border: 3px solid white;
 }
@@ -157,6 +158,8 @@ body, html {
     padding: 10px 40px;
 }
 .news {
+    width: 80%;
+    margin: auto;
     padding: 40px 0px;
 }
 .news h1 {
@@ -192,7 +195,7 @@ body, html {
     font-size: 25px;
     letter-spacing: 5px;
     text-align: center;
-    padding: 30px 20px;
+    padding: 5% 5%;
     border-radius: 20px;
     opacity: 80%;
 }
@@ -213,7 +216,7 @@ body, html {
     font-size: 25px;
     letter-spacing: 5px;
     text-align: center;
-    padding: 30px 20px;
+    padding: 5% 5%;
     border-radius: 20px;
     opacity: 80%;
 }
@@ -235,7 +238,7 @@ body, html {
     font-size: 25px;
     letter-spacing: 5px;
     text-align: center;
-    padding: 20px 10px;
+    padding: 5% 5%;
     border-radius: 20px;
     opacity: 80%;
 }
@@ -257,7 +260,7 @@ body, html {
     font-size: 25px;
     letter-spacing: 5px;
     text-align: center;
-    padding: 20px 10px;
+    padding: 5% 5%;  /*20px 30px*/
     border-radius: 20px;
     opacity: 80%;
 }
@@ -395,8 +398,9 @@ hr {
 }
 @media (max-width: 1150px){
     .news_grid {
-        width: 500px;
+        width: 100%;
         margin: auto;
+        display: grid;
         grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
