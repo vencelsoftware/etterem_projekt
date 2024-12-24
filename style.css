@@ -23,6 +23,9 @@ body {
     margin: 0;
     padding: 0;
 }
+body, html {
+    overflow-x: hidden;
+}
 .navbar {
     background-color: #FFE6A7;
     display: flex;
