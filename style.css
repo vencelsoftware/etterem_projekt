@@ -490,4 +490,19 @@ hr {
         width: 90%;
         gap: 30px;
     }
+    .contact h3 {
+        font-size: 15px;
+    }
+    .contact p {
+        font-size: 10px;
+    }
+    .at a {
+        font-size: 10px;
+    }
+    .at p {
+        font-size: 10px;
+    }
+    .at {
+        padding-top: 0px;
+    }
 }
