@@ -445,6 +445,12 @@ hr {
     .hover_background {
         padding: 5px 10px;
     }
+    .navbar ul {
+        row-gap: 10px;
+    }
+    .nav_button {
+        padding: 10px 20px;
+    }
     .heading_text h1 {
         font-size: 25px;
     }
