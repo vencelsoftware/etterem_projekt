@@ -1,0 +1,505 @@
+@font-face {
+    font-family: ExtraLight;
+    src: url("fonts/SourGummy_Expanded-ExtraLight.woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Regular;
+    src: url("fonts/SourGummy_Expanded-Regular.woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Expanded-Bold;
+    src: url("fonts/SourGummy_SemiExpanded-Bold.woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+}
+.navbar {
+    background-color: #FFE6A7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.logo h2 {
+    font-family: Regular;
+    padding: 0px 10px;
+}
+.navbar ul {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 20px;
+}
+.navbar li {
+    list-style-type: none;
+    margin: 5px 0px;
+}
+.navbar a {
+    color: #6F1D1B;
+    text-decoration: none;
+    font-family: ExtraLight;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hover_background {
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s linear;
+}
+.hover_background:hover {
+    padding: 10px 20px;
+    background-color: RGBA(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+.nav_button {
+    background-color: #6F1D1B;
+    color: white !important;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s linear;
+}
+.nav_button:hover {
+    background-color: white;
+    color: #6F1D1B !important;
+}
+.heading_section {
+    background-color: #6F1D1B;
+    color: #FFE6A7;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 50px;
+}
+.heading_text {
+    width: 500px;
+}
+.heading_text h1 {
+    font-family: Expanded-Bold;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding: 0px 20px;
+}
+.heading_text p {
+    font-family: ExtraLight;
+    font-size: 20px;
+    word-spacing: 5px;
+    padding: 0px 20px;
+}
+.heading_img {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.heading_img img {
+    width: 90%;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+.heading_img h3 {
+    position: absolute;
+    background-color: white;
+    color: #6F1D1B;
+    font-family: Regular;
+    font-size: 20px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    bottom: -10%;
+}
+.heading_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 20px;
+}
+.heading_buttons a {
+    text-decoration: none;
+    font-family: Regular;
+    font-size: 18px;
+    color: #6F1D1B;
+    background-color: #FFE6A7;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0px 20px 0 #FFE6A7;
+    transition: box-shadow 0.2s linear;
+    transition: padding 0.2s linear;
+}
+.heading_buttons a:hover {
+    box-shadow: 0 0px 40px 0 #FFE6A7;
+    padding: 10px 40px;
+}
+.news {
+    width: 1000px;
+    margin: auto;
+    padding: 40px 0px;
+}
+.news h1 {
+    font-family: Expanded-Bold;
+    font-size: 35px;
+    color: #6F1D1B;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.news_grid {
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.friday_party {
+    background-image: url("assets/party.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #6F1D1B;
+}
+.friday_party h3 {
+    color: #6F1D1B;
+    background-color: white;
+    font-family: Expanded-Bold;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 20px;
+    opacity: 80%;
+}
+.discount {
+    background-image: url("assets/soup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #6F1D1B;
+}
+.discount h3 {
+    color: #6F1D1B;
+    background-color: white;
+    font-family: Expanded-Bold;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 20px;
+    opacity: 80%;
+}
+.french {
+    grid-row: 1 / span 2;
+    background-image: url("assets/croissant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #6F1D1B;
+}
+.french h3 {
+    color: #6F1D1B;
+    background-color: white;
+    font-family: Expanded-Bold;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 20px;
+    opacity: 80%;
+}
+.vip {
+    grid-column: 2 / span 2;
+    background-image: url("assets/vip.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #6F1D1B;
+}
+.vip h3 {
+    color: #6F1D1B;
+    background-color: white;
+    font-family: Expanded-Bold;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 20px;
+    opacity: 80%;
+}
+hr {
+    width: 50%;
+    color: #6F1D1B;
+    border-style: dotted none none none;
+    border-width: 8px;
+    margin: 40px auto;
+}
+.foods_drinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    row-gap: 30px;
+    padding: 20px 0px;
+}
+.menu img {
+    width: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #6F1D1B;
+    transition: width 0.2s linear;
+}
+.menu h1 {
+    font-family: Expanded-Bold;
+    font-size: 35px;
+    color: #6F1D1B;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.menu img:hover {
+    width: 700px;
+    box-shadow: 0px 0px 60px #6F1D1B;
+    transition: width 0.2s linear;
+}
+.menu {
+    margin-bottom: 50px;
+}
+.partners h1 {
+    font-family: Expanded-Bold;
+    font-size: 35px;
+    color: #6F1D1B;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.partners_paragraph {
+    text-align: center;
+}
+.partners span {
+    font-family: ExtraLight;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    background-color: #FFE6A7;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.partners_grid {
+    width: 500px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 50px;
+}
+.partners_grid img {
+    width: 80%;
+}
+.partners_grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 30px 0 #FFE6A7;
+    border-radius: 15px;
+    transition: box-shadow 0.2s linear;
+}
+.partners_grid div:hover {
+    box-shadow: 0 0px 30px 0 #6F1D1B;
+}
+.weboldalnet, .mercedes, .jabil {
+    grid-column: span 2;
+}
+.footer {
+    background-color: #6F1D1B;
+    color: #FFE6A7;
+    padding: 30px 0px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+.logo_contact {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact h3 {
+    font-family: Regular;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.contact p {
+    font-family: ExtraLight;
+    font-size: 16px;
+}
+.at {
+    text-align: center;
+    padding-top: 20px;
+}
+.at a {
+    text-decoration: none;
+    font-family: ExtraLight;
+    color: #FFE6A7;
+    font-size: 16px;
+}
+.at a:hover {
+    text-decoration: underline;
+}
+.at p {
+    font-family: ExtraLight;
+    font-size: 16px;
+}
+.footer_line {
+    width: 20%;
+    color: #FFE6A7;
+    border-style: dotted none none none;
+    border-width: 6px;
+    margin: 20px auto;
+}
+@media (max-width: 1200px) {
+    .news_grid {
+        grid-template-columns: repeat(2, 400px);
+        grid-template-columns: repeat(2, 400px);
+        justify-content: center;
+    }
+    .french {
+        grid-row: span 1;
+    }
+    .vip {
+        grid-column: span 1;
+    }
+}
+@media (max-width: 992px) {
+    .news_grid {
+        width: 300px;
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(4, 300px);
+        justify-content: center;
+    }
+    .news {
+        width: 80%;
+    }
+    .friday_party h3 {
+        padding: 20px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .menu img {
+        width: 80%;
+    }
+    .menu img:hover {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .logo h2 {
+        font-size: 15px;
+    }
+    .navbar a {
+        font-size: 15px;
+    }
+    .hover_background {
+        padding: 5px 10px;
+    }
+    .navbar ul {
+        row-gap: 10px;
+    }
+    .nav_button {
+        padding: 10px 20px;
+    }
+    .heading_text h1 {
+        font-size: 25px;
+    }
+    .heading_text p {
+        font-size: 15px;
+    }
+    .news h1 {
+        font-size: 25px;
+    }
+    .news_grid {
+        width: 200px;
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(4, 200px);
+        justify-content: center;
+    }
+    .news_grid h3 {
+        font-size: 15px;
+    }
+    .news_item h3 {
+        padding: 20px 5px;
+    }
+    .heading_img h3 {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    .menu h1 {
+        font-size: 20px;
+    }
+    .partners h1 {
+        font-size: 20px;
+    }
+    .partners span {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+    .partners_grid {
+        width: 90%;
+        gap: 30px;
+    }
+    .contact h3 {
+        font-size: 15px;
+    }
+    .contact p {
+        font-size: 10px;
+    }
+    .at a {
+        font-size: 10px;
+    }
+    .at p {
+        font-size: 10px;
+    }
+    .at {
+        padding-top: 0px;
+    }
+}
